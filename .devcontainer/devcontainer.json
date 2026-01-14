@@ -1,0 +1,31 @@
+{
+  "name": "Java 17 DSA Environment",
+  "image": "mcr.microsoft.com/devcontainers/java:17",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "17",
+      "jdkDistro": "ms"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "java.format.enabled": false,
+        "java.checkstyle.enabled": true,
+        "editor.codeActionsOnSave": {
+          "source.fixAll": "explicit"
+        }
+      },
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "redhat.java",
+        "vscjava.vscode-maven",
+        "editorconfig.editorconfig",
+        "visualstudioexptteam.vscodeintellicode",
+        "richardwillis.vscode-gradle",
+        "shengchen.vscode-checkstyle"
+      ]
+    }
+  },
+  "postCreateCommand": "echo 'Java 17 DSA Environment Ready!'"
+}
