@@ -1,0 +1,8 @@
+{
+    "java.format.enabled": false,
+    "java.checkstyle.enabled": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit"
+    }
+}
+  
