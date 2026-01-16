@@ -1,0 +1,62 @@
+Problems.
+
+1. (4 points) Confirm that your coding environment (such as your IDE or manual CLASSPATH setup) works with the algs4.jar library by running the included ResizingArrayBag (which uses StdOut) and Stack classes. The main program in the Stack class expects input from the keyboard; use this:
+to be or not to - be - - 
+Take a screenshot showing that the programs compiled and ran properly. Expected output for Stack will be something like:
+to be not (3 left on stack)
+ 
+2. (6 points) This is a CSCI 257 review question.
+
+Consider the method below. Assume the code functions correctly and is part of a proper class definition called HW1:
+          public static int CodeExample(int a[], int f, int L, int x) {
+
+             int m = (f+L)/2;
+
+             if (f < L) {
+
+                if ( x < a[m] )
+
+                   return CodeExample(a, f, m-1, x);
+
+                else if ( x > a[m] )
+   
+                   return CodeExample(a, m+1, L, x);
+
+                else
+
+                   return m;
+
+             } else {
+
+                return -1;
+             }
+
+          }
+What is returned by the call to CodeExample when called as shown below? Work through the code by hand to find out.
+
+   int[] temps = {1, 15, 31, 58, 63, 72, 91};
+   HW1.CodeExample(temps, 0, temps.length-1, 31);
+ 
+What must be true of the array a[] for the method to work properly?
+ 
+What is the name of the algorithm implemented by CodeExample?
+ 
+3. (6 points) Look up the Iterable interface in Java's online documentation and write the complete method signature of every method the interface defines.  The documentation link is for Java version 11, which the textbook assumes.
+
+4. (6 points) In Python, strings are iterable by default. Are members of the String class in Java also iterable? To find out, write a simple class with just a main method. Prompt the user for a String and then use the "enhanced for" statement to print each character of the String, one per line. Compile the program; if it compiles, test it. What happens? Give a complete description and provide a screenshot of the compilation/run. Include your program listing in the screenshot.
+ 
+5. (4 points) What would be a faster way to find out if Java strings are iterable? If stumped, go back to the docs link in question 3.
+ 
+6. (6 points) Consider the following code fragment:
+Stack<String> stk = new Stack<String>();
+ 
+// insertions and other processing...
+ 
+for (String s : stk) {
+   StdOut.println(s); 
+}
+Rewrite the enhanced for loop as a while loop, using the Stack class iterator explicitly.
+ 
+7. (8 points) If I had written this textbook, I would have created an interface for the collection classes Stack, Queue, Bag and so on for each collection class studied. Classes such as LinkedStack and ResizingArrayStack, would implement the Stack interface, LinkedQueue and ResizingArrayQueue would implement the Queue interface, and so on.
+
+Write out two Java interfaces called  Stack and Queue. Include only those methods that should be common to all stacks and/or queues.
