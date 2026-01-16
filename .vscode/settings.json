@@ -3,6 +3,11 @@
     "java.checkstyle.enabled": true,
     "editor.codeActionsOnSave": {
         "source.fixAll": "explicit"
-    }
+    },
+    "java.dependency.packagePresentation": "hierarchical",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "algs4.jar"
+    ]
 }
   
