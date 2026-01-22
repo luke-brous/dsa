@@ -7,6 +7,8 @@ to be or not to - be - -
 Take a screenshot showing that the programs compiled and ran properly. Expected output for Stack will be something like:
 to be not (3 left on stack)
  
+   i) Outputs are attached 
+
 2. (6 points) This is a CSCI 257 review question.
 
 Consider the method below. Assume the code functions correctly and is part of a proper class definition called HW1:
@@ -42,9 +44,11 @@ a) What is returned by the call to CodeExample when called as shown below? Work 
    i. -1 is return by this code
  
 b) What must be true of the array a[] for the method to work properly?
+
    i) The array a must be sorted in ascending order
  
 c) What is the name of the algorithm implemented by CodeExample?
+
    i) Binary Search
  
 3. (6 points) Look up the Iterable interface in Java's online documentation and write the complete method signature
@@ -58,9 +62,14 @@ To find out, write a simple class with just a main method. Prompt the user for a
 "enhanced for" statement to print each character of the String, one per line. Compile the program; if it compiles, 
 test it. What happens? Give a complete description and provide a screenshot of the compilation/run. 
 Include your program listing in the screenshot.
+
+   i) The String class in Java is not iterable. It says that the item being iterated over must be an array or java.lang.Iterable. Since 
+   the String class is not iterable it throws an error. 
  
 
 5. (4 points) What would be a faster way to find out if Java strings are iterable? If stumped, go back to the docs link in question 3.
+   i) The easiest way would be looking at the implemented interfaces of the String class. We can see that String only implements
+   Serializable, Comparable<String>, and CharSequence.
  
 6. (6 points) Consider the following code fragment:
 Stack<String> stk = new Stack<String>();
