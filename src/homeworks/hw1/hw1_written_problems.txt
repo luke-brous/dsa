@@ -1,6 +1,8 @@
 Problems.
 
-1. (4 points) Confirm that your coding environment (such as your IDE or manual CLASSPATH setup) works with the algs4.jar library by running the included ResizingArrayBag (which uses StdOut) and Stack classes. The main program in the Stack class expects input from the keyboard; use this:
+1. (4 points) Confirm that your coding environment (such as your IDE or manual CLASSPATH setup) works with the algs4.jar 
+library by running the included ResizingArrayBag (which uses StdOut) and Stack classes. 
+The main program in the Stack class expects input from the keyboard; use this:
 to be or not to - be - - 
 Take a screenshot showing that the programs compiled and ran properly. Expected output for Stack will be something like:
 to be not (3 left on stack)
@@ -32,19 +34,32 @@ Consider the method below. Assume the code functions correctly and is part of a 
              }
 
           }
-What is returned by the call to CodeExample when called as shown below? Work through the code by hand to find out.
+a) What is returned by the call to CodeExample when called as shown below? Work through the code by hand to find out.
 
    int[] temps = {1, 15, 31, 58, 63, 72, 91};
    HW1.CodeExample(temps, 0, temps.length-1, 31);
- 
-What must be true of the array a[] for the method to work properly?
- 
-What is the name of the algorithm implemented by CodeExample?
- 
-3. (6 points) Look up the Iterable interface in Java's online documentation and write the complete method signature of every method the interface defines.  The documentation link is for Java version 11, which the textbook assumes.
 
-4. (6 points) In Python, strings are iterable by default. Are members of the String class in Java also iterable? To find out, write a simple class with just a main method. Prompt the user for a String and then use the "enhanced for" statement to print each character of the String, one per line. Compile the program; if it compiles, test it. What happens? Give a complete description and provide a screenshot of the compilation/run. Include your program listing in the screenshot.
+   i. -1 is return by this code
  
+b) What must be true of the array a[] for the method to work properly?
+   i) The array a must be sorted in ascending order
+ 
+c) What is the name of the algorithm implemented by CodeExample?
+   i) Binary Search
+ 
+3. (6 points) Look up the Iterable interface in Java's online documentation and write the complete method signature
+ of every method the interface defines.  The documentation link is for Java version 11, which the textbook assumes.
+   i) default void	forEach​(Consumer<? super T> action)	
+      Iterator<T>	     iterator()	
+      default Spliterator<T>	spliterator()	
+
+4. (6 points) In Python, strings are iterable by default. Are members of the String class in Java also iterable? 
+To find out, write a simple class with just a main method. Prompt the user for a String and then use the 
+"enhanced for" statement to print each character of the String, one per line. Compile the program; if it compiles, 
+test it. What happens? Give a complete description and provide a screenshot of the compilation/run. 
+Include your program listing in the screenshot.
+ 
+
 5. (4 points) What would be a faster way to find out if Java strings are iterable? If stumped, go back to the docs link in question 3.
  
 6. (6 points) Consider the following code fragment:
