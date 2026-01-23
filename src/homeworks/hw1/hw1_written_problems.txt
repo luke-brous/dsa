@@ -81,6 +81,25 @@ for (String s : stk) {
 }
 Rewrite the enhanced for loop as a while loop, using the Stack class iterator explicitly.
  
-7. (8 points) If I had written this textbook, I would have created an interface for the collection classes Stack, Queue, Bag and so on for each collection class studied. Classes such as LinkedStack and ResizingArrayStack, would implement the Stack interface, LinkedQueue and ResizingArrayQueue would implement the Queue interface, and so on.
+7. (8 points) If I had written this textbook, I would have created an interface for the collection classes Stack, Queue, Bag and so on for each collection class studied. 
+Classes such as LinkedStack and ResizingArrayStack, would implement the Stack interface, LinkedQueue and ResizingArrayQueue would implement the Queue interface, and so on.
 
 Write out two Java interfaces called  Stack and Queue. Include only those methods that should be common to all stacks and/or queues.
+
+i)
+
+public interface Stack<item> {
+   Item Pop();
+   void push(Item item);
+   Item peek();
+   boolean isEmpty();
+   int size(); 
+}
+
+public interface Queue<item> {
+   boolean add(Item item)
+   Item remove();
+   <Item> peek();
+   boolean isEmpty();
+   int size();
+}
