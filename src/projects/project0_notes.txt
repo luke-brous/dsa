@@ -1,0 +1,2 @@
+java -cp algs4.jar edu.princeton.cs.algs4.ThreeSum algs4-data/1Kints.txt
+java -cp algs4.jar edu.princeton.cs.algs4.<ClassName> algs4-data/<data argument>
